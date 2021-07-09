@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavbarComp from './components/NavbarComp';
+import'./styles.css'
 import axios from 'axios';
 
 class App extends Component {
@@ -63,6 +65,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <NavbarComp />
                <div className='container'>
                     <div className='form-div'>
                         <form onSubmit={this.onSubmit}>
@@ -94,7 +97,9 @@ class App extends Component {
                             className='form-control form-group'
                             />
 
+                          
                             <input type='submit' className='btn btn-danger btn-block' value='Submit'/>
+                            
                         </form>
                     </div>   
                 </div> 
